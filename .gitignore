@@ -1,0 +1,13 @@
+# ignore everything but .tex and .pdf files
+
+*.aux
+*.dvi
+*.log
+*.synctex.gz
+
+# ignore images
+
+*.png
+*.jpg
+*.gif
+
