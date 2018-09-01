@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\linespread{1.3}
+\parindent=0in
+
+\begin{document}
+(0) Give example relations with the following properties, if possible. Problem F is done for you.
+
+\begin{center}
+\begin{tabular}{ | l | l | l | l | }
+\hline
+\textbf{Problem} & \textbf{Reflexive} & \textbf{Transitive} & \textbf{Symmetric}\\
+\hline
+A  & No  & No & No\\
+\hline
+B & No & No & Yes\\
+\hline
+C & No & Yes & No\\
+\hline 
+D & No & Yes & Yes\\
+\hline
+E & Yes & No & No\\
+\hline
+F & Yes & No & Yes\\
+\hline
+G & Yes & Yes & No\\
+\hline
+H & Yes & Yes & Yes\\
+\hline
+\end{tabular}
+\end{center}
+
+Solution to problem F.
+\begin{center}
+\begin{tabular}{ | l | l | l | l | }
+\hline
+\textit{\textbf{F}} & \textbf{a} & \textbf{b} & \textbf{c}\\
+\hline
+\textbf{a}  & T  & T & T\\
+\hline
+\textbf{b} & T & T & F\\
+\hline
+\textbf{c} & T & F & T\\
+\hline 
+\end{tabular}
+\end{center}
+
+This relation is symmetric since it is symmetric along the main diagonal. It is reflexive, since it true at all positions along the diagonal. It is not transitive since $_bR_a$ and $_aR_c$ but $\neg_bR_c$.\\
+
+Solution to problem A.
+\begin{center}
+\begin{tabular}{ | l | l | l | l | }
+\hline
+\textit{\textbf{A}} & \textbf{a} & \textbf{b} & \textbf{c}\\
+\hline
+\textbf{a}  & F  & F & T\\
+\hline
+\textbf{b} & T & F & F\\
+\hline
+\textbf{c} & F & T & F\\
+\hline 
+\end{tabular}
+\end{center}
+
+This relation is not reflexive as $\neg_aR_a$ disproves reflexivity. This relation is not transitive as $_aR_c$ $\wedge$ $_cR_b$ but $\neg_aR_b$, disproving transitivity. This relation is not symmetric, as disproven by the conjunction $_aR_c$ $\wedge$ $\neg_cR_a$.
+
+\end{document}

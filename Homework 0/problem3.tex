@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\linespread{1.3}
+\parindent=0in
+
+\begin{document}
+Ace Hardware has the following slogan: \textit{If we don't have it, you don't need it.} Does this mean the same thing as: \textit{If you don't need it, we don't have it? If you need it, we have it?}\\ 
+
+We can make the proof using symbolic logic.\\
+
+\textbf{Proof}\\
+Let $H$ = ``we do have it'' and $N$ = ``you need it.'' Then, the original statement $P$ = ``if we don't have it, you don't need it'' can be written as $\neg H \rightarrow \neg N$. Using logical equivalences,
+\begin{align}
+P &= \neg H \rightarrow \neg N \nonumber \\
+&= \neg\neg H \vee \neg N \nonumber \\
+&= H \vee \neg N \nonumber \\
+&= \neg N \vee H \nonumber \\
+&= N \rightarrow H
+\end{align}
+
+Let the second statement $P^\prime$ = ``if you don't need it, we don't have it'' = $\neg N \rightarrow \neg H$. The form of $P^\prime$ is called the inverse of $P$, and since inversions are not logically equivalent to the original statement, $P^\prime$ is not logically equivalent to $P$.\\
+
+Let the third statement $P^{\prime\prime}$ = ``if you need it, we have it'' = $N \rightarrow H$. Since this is logically equivalent to (1), which is logically equivalent to $P$, $P^{\prime\prime}$ is logically equivalent to $P$.
+
+\end{document}
