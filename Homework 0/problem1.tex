@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\linespread{1.3}
+\parindent=0in
+
+\begin{document}
+Consider the following relation on the natural numbers. For $i, j \in \mathbb{N}$ say that $_i$R$_j$ if $i$ and $j$ share at least two unique common positive integer divisors (i.e., not relatively prime).\\
+
+For example, $_2$R$_{10}$ since 1 and 2 are both divisors of 2 and 10. But the following is untrue: $_{21}$R$_{10}$ since the only factors of 21 are 1, 3, and 7 while 10's only factors are 1, 2, and 5; only 1 factor is common between these two sets.\\
+
+Is this relation Reflexive? Symmetric? Transitive? An equivalence relation? Justify your answer.\\
+
+\textbf{Proof} \\
+Let a set of positive divisors for an integer $k \in \mathbb{N}$ be denoted $D(k)$. Then, a different statement of $R$ could be the following: For $i, j \in \mathbb{N}$ say that $_i$R$_j$ if and only if $|D(i) \cap D(j)| \geq 2$. Hence, it is easy to see that the relation is symmetric, as for any two sets $\mathbb{A}$ and $\mathbb{B}$, $\mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A}$ by definition of set intersection. It is also easy to see why the relation is reflexive, as the set $D(i) \cap D(i) = D(i)$, meaning $_i$R$_i$ is true. However, the relation R is not transitive, as shown by the counterexample $_2$R$_{10}$ (by 1 and 2) and $_{10}$R$_{25}$ (by 1 and 5), but $\neg_2$R$_{25}$.
+
+\end{document}
